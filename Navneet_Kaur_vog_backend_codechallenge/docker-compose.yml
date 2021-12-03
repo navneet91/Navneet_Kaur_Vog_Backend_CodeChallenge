@@ -5,4 +5,4 @@ services:
     image: ${DOCKER_REGISTRY-}vogcodechallengeapi
     build:
       context: .
-      dockerfile: VogCodeChallenge.API\Dockerfile
+      dockerfile: VogCodeChallenge.API/Dockerfile
