@@ -10,6 +10,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VogCodeChallenge.DataManager.Abstraction;
+using VogCodeChallenge.DataManager.Implementation;
+using VogCodeChallenge.Services.Abstracion;
+using VogCodeChallenge.Services.Implementation;
 
 namespace VogCodeChallenge.API
 {
@@ -26,7 +30,10 @@ namespace VogCodeChallenge.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IEmployeeDataManager, EmployeeDataManager>();
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

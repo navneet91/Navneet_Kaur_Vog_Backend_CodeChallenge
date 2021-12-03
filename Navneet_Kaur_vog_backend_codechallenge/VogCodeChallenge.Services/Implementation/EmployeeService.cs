@@ -11,7 +11,7 @@ namespace VogCodeChallenge.Services.Implementation
     public class EmployeeService:IEmployeeService
     {
         private IEmployeeDataManager _emp;
-        EmployeeService(IEmployeeDataManager objEmp)
+      public  EmployeeService(IEmployeeDataManager objEmp)
         {
             _emp = objEmp;
                 
@@ -24,9 +24,9 @@ namespace VogCodeChallenge.Services.Implementation
         {
            return _emp.ListAllEmployee();
         }
-        public IList<Employee> GetEmployeesForDepartment(int deptId)
+        public IList<Employee> GetEmployeesForDepartment(Int16 deptId)
         {
-            return _emp.ListAllEmployee();
+           return  _emp.ListAllEmployee().Where(x => x.deptId == deptId).ToList();
         }   
     }
 }

@@ -9,6 +9,6 @@ namespace VogCodeChallenge.Services.Abstracion
     {
         IEnumerable<Employee> GetAll();
         IList<Employee> ListAll();
-        IList<Employee> GetEmployeesForDepartment(int deptId);
+        IList<Employee> GetEmployeesForDepartment(Int16 deptId);
     }
 }
