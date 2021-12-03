@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -12,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using VogCodeChallenge.DataManager.Abstraction;
 using VogCodeChallenge.DataManager.Implementation;
+using VogCodeChallenge.Entities.Models;
 using VogCodeChallenge.Services.Abstracion;
 using VogCodeChallenge.Services.Implementation;
 
@@ -30,8 +32,10 @@ namespace VogCodeChallenge.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<EmployeeInfoContext>(options => options.UseInMemoryDatabase(databaseName: "EmployeeInfo"));
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IEmployeeDataManager, EmployeeDataManager>();
+           
         }
 
 

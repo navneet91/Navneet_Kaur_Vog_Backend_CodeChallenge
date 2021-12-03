@@ -1,21 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using VogCodeChallenge.DataManager.Abstraction;
 using VogCodeChallenge.Entities.Models;
 
 namespace VogCodeChallenge.DataManager.Implementation
 {
-   public  class EmployeeDataManager:IEmployeeDataManager
+   public  class EmployeeDataManager: BaseRepo<Employee>, IEmployeeDataManager
     {
-      
-       public IEnumerable<Employee> GetAllEmployee()
+        //db object
+        private EmployeeInfoContext _dbContext;
+       public EmployeeDataManager(EmployeeInfoContext dbContext) : base(dbContext)
         {
-            return EmployeeData.GetSampleEnumerableData();
+            _dbContext = dbContext;
+        }
+
+        public IEnumerable<Employee> GetAllEmployee()
+        {
+            return GetAll();
+            
         }
         public IList<Employee> ListAllEmployee()
         {
-            return EmployeeData.GetSampleData();
+           return GetAll().ToList();
         }
     }
 }
