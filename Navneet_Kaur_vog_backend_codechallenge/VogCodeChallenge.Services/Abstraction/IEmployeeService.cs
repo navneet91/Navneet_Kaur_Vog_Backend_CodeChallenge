@@ -5,7 +5,7 @@ using VogCodeChallenge.Entities.Models;
 
 namespace VogCodeChallenge.Services.Abstracion
 {
-    public interface IEmployee
+    public interface IEmployeeService
     {
         IEnumerable<Employee> GetAll();
         IList<Employee> ListAll();

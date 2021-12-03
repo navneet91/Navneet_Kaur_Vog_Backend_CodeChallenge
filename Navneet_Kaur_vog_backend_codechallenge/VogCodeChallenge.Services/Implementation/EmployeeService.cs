@@ -7,7 +7,7 @@ using VogCodeChallenge.DataManager.Abstraction;
 
 namespace VogCodeChallenge.Services.Implementation
 {
-    public class EmployeeService:IEmployee
+    public class EmployeeService:IEmployeeService
     {
         private IEmployeeDataManager _emp;
         EmployeeService(IEmployeeDataManager objEmp)
