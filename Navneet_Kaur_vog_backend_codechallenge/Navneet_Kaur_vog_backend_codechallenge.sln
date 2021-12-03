@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.API", "VogCodeChallenge.API\VogCodeChallenge.API.csproj", "{AFF9CEA8-C060-418E-9FFF-27DD2E129A79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.API", "VogCodeChallenge.API\VogCodeChallenge.API.csproj", "{AFF9CEA8-C060-418E-9FFF-27DD2E129A79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Entities", "VogCodeChallenge.Entities\VogCodeChallenge.Entities.csproj", "{9025B599-BAE0-460C-9A40-4BC9D916879E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.Entities", "VogCodeChallenge.Entities\VogCodeChallenge.Entities.csproj", "{9025B599-BAE0-460C-9A40-4BC9D916879E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Services", "VogCodeChallenge.Services\VogCodeChallenge.Services.csproj", "{D9A7514F-BEE4-4D71-A5CF-B5794ABFD3A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.DataManager", "VogCodeChallenge.DataManager\VogCodeChallenge.DataManager.csproj", "{897DF9C5-A392-428B-B91B-FA758441E3A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{9025B599-BAE0-460C-9A40-4BC9D916879E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9025B599-BAE0-460C-9A40-4BC9D916879E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9025B599-BAE0-460C-9A40-4BC9D916879E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A7514F-BEE4-4D71-A5CF-B5794ABFD3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A7514F-BEE4-4D71-A5CF-B5794ABFD3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A7514F-BEE4-4D71-A5CF-B5794ABFD3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A7514F-BEE4-4D71-A5CF-B5794ABFD3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897DF9C5-A392-428B-B91B-FA758441E3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897DF9C5-A392-428B-B91B-FA758441E3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897DF9C5-A392-428B-B91B-FA758441E3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897DF9C5-A392-428B-B91B-FA758441E3A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
