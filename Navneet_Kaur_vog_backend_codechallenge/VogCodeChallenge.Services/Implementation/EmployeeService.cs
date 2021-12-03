@@ -4,6 +4,7 @@ using System.Text;
 using VogCodeChallenge.Services.Abstracion;
 using VogCodeChallenge.Entities.Models;
 using VogCodeChallenge.DataManager.Abstraction;
+using System.Linq;
 
 namespace VogCodeChallenge.Services.Implementation
 {
@@ -23,5 +24,9 @@ namespace VogCodeChallenge.Services.Implementation
         {
            return _emp.ListAllEmployee();
         }
+        public IList<Employee> GetEmployeesForDepartment(int deptId)
+        {
+            return _emp.ListAllEmployee();
+        }   
     }
 }

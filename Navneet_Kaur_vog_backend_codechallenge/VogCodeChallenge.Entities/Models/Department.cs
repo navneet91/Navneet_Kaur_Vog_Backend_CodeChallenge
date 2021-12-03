@@ -12,5 +12,6 @@ namespace VogCodeChallenge.Entities.Models
         public string DeptName { get; set; }
         public string DeptAddress { get; set; }
         public List<Employee> Employees { get; set; }
+
     }
 }
