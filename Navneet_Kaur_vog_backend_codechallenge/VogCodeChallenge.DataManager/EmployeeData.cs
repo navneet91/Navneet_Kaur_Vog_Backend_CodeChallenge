@@ -11,7 +11,8 @@ namespace VogCodeChallenge.DataManager
         {
             List<Employee> lstEmp = new List<Employee>();
            lstEmp.Add(new Employee() {
-           EmployeeId=1,FirstName="Navneet",LastName="Kaur",JobTitle="Software Developer",Address="Punjab"
+           EmployeeId=1,FirstName="Navneet",LastName="Kaur",JobTitle="Software Developer",Address="Punjab",
+               deptId=1
            });
             lstEmp.Add(new Employee()
             {
@@ -19,7 +20,9 @@ namespace VogCodeChallenge.DataManager
                 FirstName = "Emmu",
                 LastName = "Su",
                 JobTitle = "Sr.Software Developer",
-                Address = "USA"
+                Address = "USA",
+                deptId=1
+
             });
             lstEmp.Add(new Employee()
             {
@@ -27,7 +30,17 @@ namespace VogCodeChallenge.DataManager
                 FirstName = "Johan",
                 LastName = "Tiwari",
                 JobTitle = "Lead",
-                Address = "Canada"
+                Address = "Canada",
+                deptId=2
+            });
+            lstEmp.Add(new Employee()
+            {
+                EmployeeId = 1,
+                FirstName = "Navneet",
+                LastName = "Kaur",
+                JobTitle = "Software Developer",
+                Address = "Punjab",
+                deptId = 3
             });
             return lstEmp;
         }
@@ -41,7 +54,8 @@ namespace VogCodeChallenge.DataManager
                 FirstName = "Navneet",
                 LastName = "Kaur",
                 JobTitle = "Software Developer",
-                Address = "Punjab"
+                Address = "Punjab",
+                deptId = 1
             });
             lstEmp.Add(new Employee()
             {
@@ -49,7 +63,9 @@ namespace VogCodeChallenge.DataManager
                 FirstName = "Emmu",
                 LastName = "Su",
                 JobTitle = "Sr.Software Developer",
-                Address = "USA"
+                Address = "USA",
+                deptId = 1
+
             });
             lstEmp.Add(new Employee()
             {
@@ -57,7 +73,17 @@ namespace VogCodeChallenge.DataManager
                 FirstName = "Johan",
                 LastName = "Tiwari",
                 JobTitle = "Lead",
-                Address = "Canada"
+                Address = "Canada",
+                deptId = 2
+            });
+            lstEmp.Add(new Employee()
+            {
+                EmployeeId = 1,
+                FirstName = "Navneet",
+                LastName = "Kaur",
+                JobTitle = "Software Developer",
+                Address = "Punjab",
+                deptId = 3
             });
             for (int i = 0; i < 3; i++)
             {
@@ -65,9 +91,7 @@ namespace VogCodeChallenge.DataManager
             } 
         }
 
-
-
-
+     
 
     } 
 }
